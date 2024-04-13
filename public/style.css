@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    color: white;
+}
+.rec-container{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1fr 1fr;
+}
+.rec-container div{
+    justify-content: center;
+    text-align: center;
+    font-family: "Shadows Into Light", cursive;
+}
+.recipie{
+    width: 50%;
+   position: absolute;
+   right: 0px;
+   height: 100%;
+   font-size: 1.5rem;
+}
+img{
+    width: 50%;
+   position: absolute;
+   left: 0px;
+   height: 100%;
+   z-index: -1;
+}
+h1{
+    font-size: 4rem;
+    margin: 0px;
+}
+h2{
+    text-decoration: underline;
+    margin: 0;
+}
+.devide{
+    display: flex;
+}
+.devide div{
+    width: 50%;
+    margin-left: 5px;
+}
+ol{
+    list-style: none;
+}

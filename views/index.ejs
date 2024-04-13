@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>5pm somewhere</title>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="rec-container">
+            <div>
+                <img src="<%=img%>">
+                <div class="button-container">
+                    <form method="post">
+                        <input type="submit" value="Random" formaction="/">
+                        <input type="text" placeholder="Search Cocktails" name="cockName"> 
+                        <input type="submit" value="Search" formaction="/search">
+                    </form>
+                </div>
+            </div>
+            <div class="recipie">
+                <div>
+                    <h1>It's 5pm Somewhere!</h1>
+                </div>
+                <h2 class="title"><%=name%></h2>
+                <div class="devide">
+                <div>
+                    <p>Recomended recepticle: <%=glass%></p>
+                    <p><%=instructions%></p>
+                </div>
+                <div>
+                    <ol>
+                        <li>Ingredients:</li>
+                        <%ingredients.forEach((ingredient) =>{%>
+                            <li><%=measure[ingredients.indexOf(ingredient)]%> <%=ingredient%></li>
+                        <%})%>
+                    </ol>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
